@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tractor Compatibility Matcher | Madina Engineering Works</title>
+  <meta name="description" content="Calculate and verify which loader model is compatible with your Swaraj, Mahindra, John Deere, Massey Ferguson, Sonalika, or New Holland tractor.">
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚜</text></svg>">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .fitment-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 30%, rgba(235, 184, 21, 0.04) 0%, transparent 60%);
+    }
+    .guide-box {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius-md);
+      padding: 24px;
+      margin-top: 32px;
+    }
+    .guide-title {
+      font-family: var(--font-headings);
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: var(--accent-gold);
+    }
+    .guide-desc {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Page Preloader -->
+  <div id="page-preloader" class="page-preloader">
+    <div class="preloader-content">
+      <div class="preloader-piston">⚙️</div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+      <span class="preloader-text">Loading Engineering Assets...</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M</div>
+        <div class="logo-text">
+          Madina
+          <span>Engineering Works</span>
+        </div>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="compatibility.html" class="nav-link active">Check Fitment</a>
+        <a href="dealers.html" class="nav-link">Dealers</a>
+        <a href="support.html" class="nav-link">FAQ & Support</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+919928509899" class="btn btn-secondary" style="padding: 10px 18px; font-size: 0.8rem;">
+          Call Sales
+        </a>
+        <div class="burger-menu" id="burger-menu">
+          <div class="burger-bar"></div>
+          <div class="burger-bar"></div>
+          <div class="burger-bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="nav-mobile" id="nav-mobile">
+    <div class="nav-mobile-links">
+      <a href="index.html" class="nav-mobile-link">Home</a>
+      <a href="about.html" class="nav-mobile-link">About</a>
+      <a href="products.html" class="nav-mobile-link">Products</a>
+      <a href="compatibility.html" class="nav-mobile-link active">Check Fitment</a>
+      <a href="dealers.html" class="nav-mobile-link">Dealers</a>
+      <a href="support.html" class="nav-mobile-link">FAQ & Support</a>
+      <a href="contact.html" class="nav-mobile-link">Contact</a>
+    </div>
+    
+    <div class="nav-mobile-footer">
+      <a href="tel:+919928509899" class="btn btn-orange">Call Helpline</a>
+      <a href="https://wa.me/919928509899?text=Hello%20Madina%20Engineering%20Works" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Chat</a>
+    </div>
+  </div>
+
+  <!-- Fitment Hero -->
+  <section class="fitment-hero subpage-hero">
+    <!-- Subpage Slideshow Background -->
+    <div class="subpage-hero-slideshow">
+      <div class="subpage-hero-slide active" style="background-image: linear-gradient(rgba(10, 13, 16, 0.9), rgba(10, 13, 16, 0.9)), url('assets/images/finished_loaders_yard.png');"></div>
+      <div class="subpage-hero-slide" style="background-image: linear-gradient(rgba(10, 13, 16, 0.9), rgba(10, 13, 16, 0.9)), url('assets/images/manufacturing_welding.png');"></div>
+      <div class="subpage-hero-slide" style="background-image: linear-gradient(rgba(10, 13, 16, 0.9), rgba(10, 13, 16, 0.9)), url('assets/images/hydraulic_assembly.png');"></div>
+      <div class="subpage-hero-slide" style="background-image: linear-gradient(rgba(10, 13, 16, 0.9), rgba(10, 13, 16, 0.9)), url('assets/images/factory_workshop.png');"></div>
+    </div>
+    
+    <div class="container">
+      <span class="section-tag">Engineering Compatibility</span>
+      <h1 class="section-title">Check Tractor <span>Bracket Fitment</span></h1>
+      <p class="section-desc">Verify structural loader sizing, maximum load safety caps, and pin layout setups for your tractor model.</p>
+    </div>
+  </section>
+
+  <!-- Matcher Widget (From Home Page) -->
+  <section class="matcher-section" style="border-top: none; padding-top: 0;">
+    <div class="container">
+      <div class="matcher-card">
+        <div class="matcher-grid">
+          <div class="matcher-form">
+            <div class="form-group">
+              <label for="tractor-brand" class="form-label">1. Select Tractor Brand</label>
+              <div class="form-select-wrapper">
+                <select id="tractor-brand" class="form-select">
+                  <option value="" disabled selected>Choose Brand</option>
+                  <option value="Swaraj">Swaraj (e.g. 855, 744)</option>
+                  <option value="Mahindra">Mahindra (e.g. Arjun Novo, 575)</option>
+                  <option value="John Deere">John Deere (e.g. 5310, 5050)</option>
+                  <option value="Massey Ferguson">Massey Ferguson (e.g. 241, 7250)</option>
+                  <option value="Sonalika">Sonalika (e.g. Tiger, Sikander)</option>
+                  <option value="Farmtrac">Farmtrac (e.g. 60, 45)</option>
+                  <option value="Eicher">Eicher (e.g. 557, 380)</option>
+                  <option value="New Holland">New Holland (e.g. 3630)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tractor-hp" class="form-label">2. Select Horsepower (HP) Range</label>
+              <div class="form-select-wrapper">
+                <select id="tractor-hp" class="form-select">
+                  <option value="" disabled selected>Choose HP Range</option>
+                  <option value="30-40">30 HP - 40 HP (Medium Utility)</option>
+                  <option value="41-50">41 HP - 50 HP (Heavy Agricultural)</option>
+                  <option value="51-60">51 HP - 60 HP (Industrial & Kiln)</option>
+                  <option value="60+">Above 60 HP (Max Workload)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" id="check-compatibility" class="btn btn-orange" style="margin-top: 10px;">Check Loader Match</button>
+          </div>
+
+          <div class="matcher-result">
+            <!-- Default Placeholder Panel -->
+            <div class="result-placeholder" id="result-placeholder">
+              <div class="result-placeholder-icon">🔧</div>
+              <h3 style="font-family: var(--font-headings); font-weight: 700; margin-bottom: 8px; text-transform: uppercase;">Awaiting Input</h3>
+              <p style="font-size: 0.9rem;">Fill out your tractor parameters to generate the engineering fitment recommendation.</p>
+            </div>
+
+            <!-- Active Results Panel -->
+            <div class="result-active" id="result-active">
+              <div class="result-header">
+                <h3 class="result-loader-name" id="result-loader-name">Loader Specification</h3>
+                <p class="result-loader-fit" id="result-loader-fit">Compatible fitment</p>
+              </div>
+              <div class="result-specs">
+                <div class="result-spec-item">
+                  <span class="result-spec-label">Max Reach Height</span>
+                  <span class="result-spec-value" id="spec-height">-</span>
+                </div>
+                <div class="result-spec-item">
+                  <span class="result-spec-label">Tested Lift Capacity</span>
+                  <span class="result-spec-value" id="spec-capacity">-</span>
+                </div>
+                <div class="result-spec-item">
+                  <span class="result-spec-label">Sheet Steel Thickness</span>
+                  <span class="result-spec-value" id="spec-steel">-</span>
+                </div>
+                <div class="result-spec-item">
+                  <span class="result-spec-label">Chassis Brace Structure</span>
+                  <span class="result-spec-value" id="spec-brake">-</span>
+                </div>
+              </div>
+              <a href="#" id="result-whatsapp-btn" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                Inquire Price Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-box">
+        <h3 class="guide-title">Understanding Tractor HP and Front Loader Stress</h3>
+        <p class="guide-desc" style="margin-bottom: 16px;">Tractor HP dictates the volume and pressure capacity of the hydraulic pump. Running a loader larger than the tractor HP rating can overload the front axle spindles and bypass valves. Madina Engineering designs custom brackets to distribute heavy loader forces along the full length of the tractor chassis back to the rear axle housing.</p>
+        <p class="guide-desc">All our loaders feature subframe mounts that run under the driver footplate, preventing shear stress at the mid-engine split seam casing. We secure these with high-tensile 8.8-grade hardened steel fasteners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="logo-icon">M</div>
+            <div class="logo-text">Madina<span>Engineering Works</span></div>
+          </a>
+          <p class="footer-desc">Premium manufacturer of high-tensile front-end tractor loaders, sugarcane loaders, and industrial agricultural implements. 18+ Years of fabrication quality.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home Page</a></li>
+            <li><a href="products.html" class="footer-link">Products Catalog</a></li>
+            <li><a href="compatibility.html" class="footer-link">Tractor Fitment Tool</a></li>
+            <li><a href="dealers.html" class="footer-link">Dealer Portal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Engineering Core</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Facility</a></li>
+            <li><a href="support.html" class="footer-link">Support & Warranty</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Desk</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Corporate Info</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html" class="footer-link">Mehandwas, Tonk, RJ</a></li>
+            <li><a href="tel:+919928509899" class="footer-link">Helpline: +91-9928509899</a></li>
+            <li><a href="mailto:info@madinaloaders.com" class="footer-link">info@madinaloaders.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copyright">© 2026 Madina Engineering Works. All Rights Reserved. Manufactured in Mehandwas, Rajasthan, India.</span>
+        <div class="footer-socials">
+          <a href="#" class="social-icon-btn">F</a>
+          <a href="#" class="social-icon-btn">Y</a>
+          <a href="https://wa.me/919928509899" class="social-icon-btn" target="_blank" rel="noopener noreferrer">W</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Action Dock -->
+  <div class="mobile-action-dock">
+    <div class="dock-grid">
+      <a href="tel:+919928509899" class="dock-btn dock-btn-call">📞 Call Now</a>
+      <a href="https://wa.me/919928509899?text=Hi%20Madina%20Engineering,%20please%20send%20price%20quote." class="dock-btn dock-btn-whatsapp" target="_blank" rel="noopener noreferrer">💬 WhatsApp Query</a>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/compatibility.js"></script>
+</body>
+</html>
