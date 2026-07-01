@@ -154,6 +154,17 @@ button, select, input, textarea {
   letter-spacing: 0.05em;
   font-size: 0.95rem;
   gap: 10px;
+  border: 1px solid #00d2ff !important;
+  animation: neon-blue-blink 1.5s infinite;
+}
+
+@keyframes neon-blue-blink {
+  0%, 100% { 
+    box-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff; 
+  }
+  50% { 
+    box-shadow: 0 0 15px #00d2ff, 0 0 30px #00d2ff, 0 0 45px #00d2ff; 
+  }
 }
 
 .btn-primary {
