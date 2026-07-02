@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Loader Database matching rules
   const loaderSpecs = {
     '30-40': {
-      name: 'Madina Utility Dozer & Light Loader',
+      name: 'Madina Light Utility Loader',
       height: '10.5 Feet (Max Reach)',
       capacity: '1,000 kg (1.0 Ton Tested)',
       steel: '6mm Premium Carbon Steel',
@@ -41,12 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
       message: 'Excellent configuration for Brick Kilns, Sand Loading, and tall transport trucks.'
     },
     '60+': {
-      name: 'Madina Industrial Max / Sugarcane Grabber',
-      height: '14.0 Feet (Heavy Lift configuration)',
-      capacity: '2,200 kg (2.2 Tons Max Load)',
-      steel: '10mm Ultra-Reinforced Structural Alloy',
-      chassis: 'Full Extended Framing & Rear Axle Linkage support',
-      message: 'Engineered for extreme workloads, sugarcane pile manipulation, and block kiln logistics.'
+      name: 'Madina High-Reach 24-Ft Loader',
+      height: '24.0 Feet (Ultra High Reach)',
+      capacity: '2.5 Tons Safe Working Load',
+      steel: '10mm & 12mm Triple Reinforced',
+      chassis: 'Double Reinforced Heavy Steel Box Frame',
+      message: 'Engineered for extreme workloads, elevated silos, and high-clearance block kiln logistics.'
     }
   };
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         specBrake.textContent = spec.chassis;
         
         // WhatsApp URL construction
-        const phoneNumber = '919928509899'; // Madina Sales representative number
+        const phoneNumber = '919414308945'; // Madina Sales representative number
         const encodedText = encodeURIComponent(
           `Hello Madina Engineering Works, I am looking for a tractor mounted hydraulic loader compatible with my tractor.\n\n` +
           `• Brand: ${brand}\n` +

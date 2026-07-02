@@ -2,19 +2,19 @@
 
 :root {
   /* Color System */
-  --bg-primary: #0a0d10;         /* Deepest Industrial Charcoal */
-  --bg-secondary: #13181f;       /* Dark Steel Sheet */
-  --bg-tertiary: #1b222b;        /* Mid Iron Card */
-  --border-color: rgba(235, 184, 21, 0.12); /* Subtle Gold border */
-  --border-color-hover: rgba(235, 184, 21, 0.4);
+  --bg-primary: #ffffff;         /* Pure White */
+  --bg-secondary: #f8f9fa;       /* Light Steel Sheet */
+  --bg-tertiary: #f1f3f5;        /* Mid Grey Card */
+  --border-color: rgba(0, 0, 0, 0.12); /* Subtle Dark border */
+  --border-color-hover: rgba(0, 0, 0, 0.25);
   
   --accent-gold: #ebb815;        /* Industrial Gold HSL(45, 85%, 50%) */
   --accent-orange: #f25c05;      /* Safety Orange HSL(22, 96%, 48%) */
   --whatsapp-green: #25d366;     /* WhatsApp Active Brand Color */
   
-  --text-primary: #ffffff;
-  --text-secondary: #9da6b0;     /* Cool Grey */
-  --text-muted: #5e6875;
+  --text-primary: #212529;
+  --text-secondary: #495057;     /* Dark Grey */
+  --text-muted: #6c757d;
   
   /* Layout Metrics */
   --max-width: 1200px;
@@ -65,7 +65,7 @@ body {
 }
 
 .glass-map-card:hover {
-  background: rgba(27, 34, 43, 0.6) !important;
+  background: rgba(241, 243, 245, 0.6) !important;
   transform: translateY(-5px);
 }
 
@@ -223,7 +223,7 @@ button, select, input, textarea {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  background-color: rgba(10, 13, 16, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
@@ -384,7 +384,7 @@ button, select, input, textarea {
   width: 80%;
   max-width: 320px;
   height: 100vh;
-  background: rgba(19, 24, 31, 0.85);
+  background: rgba(248, 249, 250, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-left: 1px solid var(--border-color);
@@ -414,7 +414,7 @@ button, select, input, textarea {
   text-transform: uppercase;
   color: var(--text-secondary);
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .nav-mobile-link:hover, .nav-mobile-link.active {
@@ -608,7 +608,25 @@ button, select, input, textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.hero-slide {
+  opacity: 0;
+  animation: heroFade 16s infinite;
+}
+
+.hero-slide-1 { animation-delay: 0s; }
+.hero-slide-2 { animation-delay: 4s; }
+.hero-slide-3 { animation-delay: 8s; }
+.hero-slide-4 { animation-delay: 12s; }
+
+@keyframes heroFade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  20%  { opacity: 1; }
+  25%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /* Tractor Compatibility Matcher Section */
@@ -752,7 +770,7 @@ button, select, input, textarea {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px dashed rgba(255,255,255,0.05);
+  border-bottom: 1px dashed rgba(0,0,0,0.05);
 }
 
 .result-spec-label {
@@ -831,7 +849,7 @@ button, select, input, textarea {
 .product-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1056,7 +1074,7 @@ button, select, input, textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(10, 13, 16, 0.9) 0%, rgba(10, 13, 16, 0.3) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.3) 60%, transparent 100%);
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -1476,7 +1494,7 @@ button, select, input, textarea {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(10, 13, 16, 0.92);
+  background-color: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-color);
@@ -1516,13 +1534,13 @@ button, select, input, textarea {
 .dock-btn-call {
   background: linear-gradient(135deg, #ff7a00, #e05e00);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dock-btn-whatsapp {
   background: linear-gradient(135deg, #25D366, #128C7E);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Keyframes */
@@ -1679,7 +1697,7 @@ body.page-exiting {
 .preloader-bar {
   width: 240px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50px;
   overflow: hidden;
   position: relative;
@@ -1747,7 +1765,7 @@ body.page-exiting {
 /* 3D Moving Background Parallax Styling */
 .parallax-bg-3d {
   position: relative;
-  background-image: linear-gradient(rgba(10, 13, 16, 0.88), rgba(10, 13, 16, 0.88)), url('../assets/images/industrial_3d_bg.png');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('../assets/images/industrial_3d_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1888,7 +1906,7 @@ body.page-exiting {
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1902,7 +1920,7 @@ body.page-exiting {
   left: 0;
   right: 0;
   padding: 16px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.85), transparent);
   opacity: 0;
   transition: opacity 0.35s ease;
 }
@@ -1936,7 +1954,7 @@ body.page-exiting {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   z-index: 9999;
@@ -1964,10 +1982,10 @@ body.page-exiting {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  color: white;
+  color: #000;
   font-size: 1.4rem;
   cursor: pointer;
   transition: var(--transition-fast);
@@ -2008,10 +2026,10 @@ body.page-exiting {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 50%;
-  color: white;
+  color: #000;
   font-size: 1.4rem;
   cursor: pointer;
   transition: var(--transition-fast);
