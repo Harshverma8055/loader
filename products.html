@@ -290,13 +290,7 @@
             <div class="gallery-item-view">🔍 Click to expand</div>
           </div>
         </div>
-        <div class="gallery-item" data-gallery-cat="loaders" data-gallery-idx="6">
-          <img src="assets/images/gallery/green_loader_working_action.png" alt="Green Madina L-1411 Loader Working Action Sand" loading="lazy">
-          <div class="gallery-item-overlay">
-            <span class="gallery-item-label">JD L-1411 · In Action</span>
-            <div class="gallery-item-view">🔍 Click to expand</div>
-          </div>
-        </div>
+
         <div class="gallery-item" data-gallery-cat="loaders" data-gallery-idx="7">
           <img src="assets/images/gallery/green_loader_rear_angle.png" alt="Green Madina L-1411 Loader Rear Angle Profile" loading="lazy">
           <div class="gallery-item-overlay">
@@ -478,24 +472,24 @@
   <!-- Gallery Script -->
   <script>
     (function() {
-      const galleryImages = [
-        { src: 'assets/images/gallery/blue_loader_elevated.png', label: 'Blue Loader · Max Height', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_elevated_front_v2.png', label: 'JD L-1411 · Side Profile', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_front_bucket.png', label: 'JD L-1411 · Front Bucket', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_elevated_front_v2.png', label: 'JD L-1411 · Max Height', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_raised_side.png', label: 'JD L-1411 · Raised Side', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_front_view.png', label: 'JD L-1411 · Direct Front', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_working_action.png', label: 'JD L-1411 · In Action', cat: 'loaders' },
-        { src: 'assets/images/gallery/green_loader_rear_angle.png', label: 'JD L-1411 · Rear Angle', cat: 'loaders' },
-
-      ];
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      
+      const galleryImages = Array.from(galleryItems).map((item, index) => {
+        item.dataset.galleryIdx = index; // Re-index after removal
+        const imgEl = item.querySelector('img');
+        const labelEl = item.querySelector('.gallery-item-label');
+        return {
+          src: imgEl.src, // Uses fully resolved URL from browser
+          label: labelEl.textContent,
+          cat: item.dataset.galleryCat
+        };
+      });
 
       let currentIdx = 0;
       let visibleImages = [...galleryImages];
 
       // Gallery Tab Filtering
       const tabBtns = document.querySelectorAll('.gallery-tab-btn');
-      const galleryItems = document.querySelectorAll('.gallery-item');
 
       tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {

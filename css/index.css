@@ -589,17 +589,14 @@ button, select, input, textarea {
 .hero-media-wrapper {
   position: relative;
   width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--border-color);
   background: var(--bg-secondary);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-
-.hero-media-wrapper::before {
-  content: '';
-  display: block;
-  padding-top: 65%; /* 16:9 approx */
 }
 
 .hero-placeholder-svg {
