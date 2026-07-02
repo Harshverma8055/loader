@@ -1497,7 +1497,7 @@ button, select, input, textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--border-radius-sm);
+  border-radius: 50px;
   font-family: var(--font-headings);
   font-weight: 700;
   font-size: 0.85rem;
@@ -1505,16 +1505,24 @@ button, select, input, textarea {
   letter-spacing: 0.05em;
   gap: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+.dock-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .dock-btn-call {
-  background-color: var(--accent-orange);
+  background: linear-gradient(135deg, #ff7a00, #e05e00);
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dock-btn-whatsapp {
-  background-color: var(--whatsapp-green);
+  background: linear-gradient(135deg, #25D366, #128C7E);
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Keyframes */
