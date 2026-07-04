@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     '51-60': {
       name: 'Madina 14-Ft / 24-Ft Telescopic Loader',
-      height: '14.0 - 24.0 Feet Reach',
+      height: 'Max Lift: 24 Feet / Dumping: 21 Feet',
       capacity: '2,000 kg (2.0 Tons Tested)',
       steel: '8mm / 10mm Dual Reinforced Steel',
       chassis: 'Extended Side Arm Brace & Tie-Bar',
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     '60+': {
       name: 'Madina 14-Ft / 24-Ft Telescopic Loader',
-      height: '14.0 - 24.0 Feet Reach',
+      height: 'Max Lift: 24 Feet / Dumping: 21 Feet',
       capacity: '2.5 Tons Safe Working Load',
       steel: '10mm & 12mm Triple Reinforced',
       chassis: 'Double Reinforced Heavy Steel Box Frame',
